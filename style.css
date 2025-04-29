@@ -1,0 +1,266 @@
+/* Reset some default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply a simple web font for the body and header */
+  body {
+    font-family: 'Roboto', sans-serif; /* Webfont #1 */
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 0 20px; /* Add padding for left and right margin */
+  }
+  
+  /* Style the headings */
+  h1, h2 {
+    font-family: 'Lora', serif; /* Webfont #2 */
+    margin-bottom: 1rem; /* Add space below headings */
+  }
+  
+  /* Menu Styles */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #2c3e50;
+    margin-bottom: 2rem; /* Add space below the navigation */
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  
+  /* Glow effect for the menu text */
+  nav ul li a:hover {
+    color: #f39c12;
+    text-shadow: 0 0 10px #f39c12, 0 0 20px #f39c12, 0 0 30px #f39c12; /* Text glow effect */
+  }
+  
+  /* Header Section */
+  header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #34495e;
+    color: white;
+    margin-bottom: 2rem; /* Add space below the header */
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+  }
+  
+  /* Columns with gap and dotted rule */
+  #about, #products {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 30px; /* Increase gap between columns */
+    border-top: 2px dotted #bdc3c7;
+    padding: 20px;
+    margin-bottom: 2rem; /* Add space below the section */
+  }
+  
+  #about img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* First letter styling (CSS3 Pseudo-element) */
+  h2::first-letter {
+    font-size: 3rem;
+    color: #f39c12;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+  }
+  
+  /* Video and Audio Section */
+  #video, #audio {
+    padding: 2rem;
+    background-color: #ecf0f1;
+    margin-top: 2rem;
+    margin-bottom: 2rem; /* Add space below video/audio sections */
+  }
+  
+  #video video,
+  #audio audio {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Footer Section */
+  footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem;
+    font-size: 1rem;
+    margin-top: 3rem; /* Add space above the footer */
+  }
+  
+  /* Links */
+  a {
+    color: #f39c12;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design (optional for smaller screens) */
+  @media (max-width: 768px) {
+    #about, #products {
+      grid-template-columns: 1fr; /* One column for smaller screens */
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    header p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Contact Section Form Styling */
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  form label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  form textarea {
+    resize: vertical;
+  }
+  
+  form input[type="submit"] {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Quiz Section Styling */
+  #quiz {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem; /* Add space below the quiz section */
+  }
+  
+  .quiz-question {
+    margin-bottom: 1.5rem;
+  }
+  
+  .quiz-question p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px; /* Add space below the question */
+  }
+  
+  .quiz-question label {
+    font-size: 1rem;
+    margin-left: 1rem;
+    display: block;
+    margin-bottom: 8px; /* Add space below the options */
+  }
+  
+  #quiz-result {
+    background-color: #ecf0f1;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  #quiz-form input[type="submit"] {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #quiz-form input[type="submit"]:hover {
+    background-color: #e67e22;
+  }
+  /* Enable smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Additional styling for smooth scroll animation */
+  nav ul li a {
+    transition: color 0.3s, transform 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #f39c12;
+    transform: translateY(-2px);
+  }
+  /* Set fixed image size */
+#about img,
+#products img {
+    width: 300px;  /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensure image fits within the box */
+    border-radius: 8px; /* Rounded corners */
+}

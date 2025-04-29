@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bahrain Roastery - Artisan Coffee Roasting">
+  <meta name="keywords" content="coffee, roasting, Bahrain, artisan, fresh">
+  <meta name="author" content="Bahrain Roastery">
+  <title>Bahrain Roastery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="script" href="script.js">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Our Products</a></li>
+        <li><a href="#video">Coffee Roasting</a></li>
+        <li><a href="#audio">Coffee Playlist</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Bahrain Roastery</h1>
+    <p>Your premium artisan coffee roastery.</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We provide freshly roasted coffee beans with the finest quality, grown in Bahrain and around the world. Our team ensures each batch is roasted to perfection, giving you the best coffee experience.</p>
+    <figure>
+      <img src="images/coffee beans.jpeg" alt="Coffee beans roasting">
+      <figcaption>Freshly roasted beans at Bahrain Roastery</figcaption>
+    </figure>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <p>Explore our selection of high-quality coffee blends and single-origin beans, all roasted to bring out the best flavors. Whether you prefer rich and bold or light and floral, we have something for every coffee enthusiast.</p>
+
+    <!-- Product List -->
+    <div class="product-list">
+      <article class="product-item">
+        <h3>Espresso Blend</h3>
+        <img src="images/Espresso Blend .jpg" alt="Espresso Blend">
+        <p>A rich, balanced coffee blend combining both dark and light roasts, perfect for your morning espresso.</p>
+      </article>
+      <article class="product-item">
+        <h3>Single Origin Sumatra</h3>
+        <img src="images/Single Origin Sumatra .jpg" alt="Single Origin Sumatra">
+        <p>Known for its earthy flavor with hints of spice, this coffee is a favorite for those who enjoy bold and complex profiles.</p>
+      </article>
+      <article class="product-item">
+        <h3>Arabica Gold</h3>
+        <img src="images/Arabica Gold .jpg" alt="Arabica Gold">
+        <p>A smooth and mellow cup of coffee with mild acidity and sweet undertones, perfect for any time of the day.</p>
+      </article>
+      <article class="product-item">
+        <h3>Dark Roast Blend</h3>
+        <img src="images/Dark Roast Blend .jpeg" alt="Dark Roast Blend">
+        <p>This dark roast blend offers deep, smoky flavors and is perfect for those who love a bold and intense cup of coffee.</p>
+      </article>
+      <article class="product-item">
+        <h3>Brazilian Santos</h3>
+        <img src="images/Brazilian Santos .jpg" alt="Brazilian Santos">
+        <p>Our Brazilian Santos offers a smooth body with low acidity and light nutty flavors, perfect for a relaxed, everyday brew.</p>
+      </article>
+      <article class="product-item">
+        <h3>Colombian Supremo</h3>
+        <img src="images/Colombian Supremo .jpg" alt="Colombian Supremo">
+        <p>This coffee has a balanced and clean taste with bright acidity and a mild sweetness, coming from the high altitudes of Colombia.</p>
+      </article>
+      <article class="product-item">
+        <h3>Ethiopian Yirgacheffe</h3>
+        <img src="images/Ethiopian Yirgacheffe .jpg" alt="Ethiopian Yirgacheffe">
+        <p>A fragrant and aromatic coffee with bright acidity and floral notes, this single-origin coffee is a favorite for light roast enthusiasts.</p>
+      </article>
+      <article class="product-item">
+        <h3>Kenyan AA</h3>
+        <img src="images/kenya.jpg" alt="Kenyan AA">
+        <p>Kenyan AA beans are known for their vibrant acidity and complex fruity flavors, offering a bold cup that’s both smooth and full-bodied.</p>
+      </article>
+    </div>
+
+    <!-- Product Details -->
+    <details>
+      <summary>Espresso Blend - Product Details</summary>
+      <p>This product is our signature blend of dark and light roasts. The combination creates a deep, intense flavor with chocolatey undertones. It's ideal for espresso machines or stovetop brewing methods.</p>
+    </details>
+    <details>
+      <summary>Brazilian Santos - Product Details</summary>
+      <p>This light roast coffee comes from the famed Brazilian coffee plantations. With nutty flavors and a mild sweetness, this is a perfect everyday brew.</p>
+    </details>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video">
+    <h2>Coffee Roasting Process</h2>
+    <p>Take a closer look at how we bring out the best in our beans during the roasting process. Watch this short video for a behind-the-scenes tour of our roasting facility:</p>
+    <video controls>
+      <source src="video/Satisfaction_ The Art of Roasting | Seattle Coffee Company.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Audio Section -->
+  <section id="audio">
+    <h2>Relax with Our Coffee Playlist</h2>
+    <p>Enjoy soothing background music while savoring your coffee. This playlist is carefully curated to enhance your coffee experience:</p>
+    <audio controls>
+      <source src="audio/indigo-lo-fi-hip-hop-320827.mp3" type="audio/mp3">
+      Your browser does not support the audio tag.
+    </audio>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or want to know more about our coffee, feel free to reach out! We’d love to hear from you:</p>
+    
+    <!-- Contact Form -->
+    <form action="submit_form.php" method="POST">
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" required><br><br>
+
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="comment">Your Comment:</label><br>
+      <textarea id="comment" name="comment" rows="5" cols="40" required></textarea><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+  <!-- Quiz Section -->
+  <section id="quiz">
+    <h2>Test Your Coffee Knowledge</h2>
+    <p>Take this quiz to see how much you know about coffee and our roasting process!</p>
+  
+    <form id="quiz-form">
+      <div class="quiz-question">
+        <p><strong>1. What is the main difference between Arabica and Robusta coffee beans?</strong></p>
+        <label>
+          <input type="radio" name="q1" value="a" required> Arabica beans have a sweeter taste, while Robusta beans are stronger and more bitter.
+        </label><br>
+        <label>
+          <input type="radio" name="q1" value="b"> Arabica beans are more bitter, while Robusta beans are smoother.
+        </label><br>
+        <label>
+          <input type="radio" name="q1" value="c"> There is no difference; both beans are identical.
+        </label><br>
+      </div>
+  
+      <div class="quiz-question">
+        <p><strong>2. Which coffee blend is known for its earthy flavors and hints of spice?</strong></p>
+        <label>
+          <input type="radio" name="q2" value="a" required> Espresso Blend
+        </label><br>
+        <label>
+          <input type="radio" name="q2" value="b"> Single Origin Sumatra
+        </label><br>
+        <label>
+          <input type="radio" name="q2" value="c"> Arabica Gold
+        </label><br>
+      </div>
+  
+      <div class="quiz-question">
+        <p><strong>3. What is the ideal brewing method for Dark Roast Blend?</strong></p>
+        <label>
+          <input type="radio" name="q3" value="a" required> Espresso machine
+        </label><br>
+        <label>
+          <input type="radio" name="q3" value="b"> Pour-over
+        </label><br>
+        <label>
+          <input type="radio" name="q3" value="c"> French press
+        </label><br>
+      </div>
+  
+      <input type="submit" value="Submit Quiz">
+    </form>
+  
+    <div id="quiz-result" style="display: none;">
+      <h3>Your Results</h3>
+      <p id="result-text"></p> <!-- This is where the result will be shown -->
+    </div>
+</section>
+
+  
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Bahrain Roastery. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
